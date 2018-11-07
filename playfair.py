@@ -29,7 +29,8 @@ class Playfair:
 
         if format:
             encrypted_message = ' '.join(
-                [encrypted_message[i: i + block_len] for i in range(0, len(encrypted_message), block_len)])
+                [encrypted_message[i: i + block_len] for i in range(0, len(encrypted_message), block_len)]
+            )
 
         return encrypted_message if not as_list else encrypted_message.split(' ')
 
